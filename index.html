@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mass Converter</title>
+	<meta name="author" content="Tomi Tomazic">
+	<meta name="description" content="Mass conversion">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="massStyle.css" type="text/css">
+    <script src="custom.js"></script>
+</head>
+
+<body>
+    <header>Mass Converter</header>
+    <div class="container">
+    <div class="row">
+    <div class="col">
+    </div>
+    <div class="col-6">
+    <div class="form-group">
+        <label>Input Number:</label>
+        <input type="number" oninput="Calculate()" class="form-control something" id="value1"/>
+        <div class="select">
+            <label>From</label>
+        <select onchange="Value(); Calculate()" class="form-control" id="converter">
+            <option value="Gram">Gram</option>
+            <option value="Pound">Pound</option>
+            <option value="Ounce">Ounce</option>
+            <option value="Tonne">Tonne</option>
+            <option value="Milligram">Milligram</option>
+            <option value="Microgram">Microgram</option>
+        </select>
+        </div>    
+        <div class="form-group">
+            <label class="kg">To Kilogram:</label>
+            <input type="number" class="form-control" id="value2" disabled="disabled"/>
+        </div>
+    </div>
+    </div>
+    <div class="col">
+    </div>
+    </div>
+    </div>
+</body>
+</html>

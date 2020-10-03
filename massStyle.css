@@ -1,0 +1,39 @@
+body {
+    /*background-color: #CDD5D1;*/
+    background-image: url("background.png")
+}
+
+header {
+    text-align: center;
+    font-size: 6rem;
+    color: #66fcf1;
+    padding-bottom: 50px;
+}
+
+.select {
+    padding-bottom: 100px;
+}
+
+.kg {
+    margin: 60px 0px 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.something {
+    margin-bottom: 60px
+}
+
+label, .kg {
+    font-weight: 600;
+    color: #45a29e;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 50px;
+  }
+}
